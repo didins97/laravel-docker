@@ -22,7 +22,7 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_SSH_KEY }}
           port: ${{ secrets.VPS_SSH_PORT }}
-          timeout: 3600
+          timeout: 3600s
           script: |
             REPO="https://${{ secrets.GIT_TOKEN }}@github.com/didins97/laravel-docker.git"
             DIR="${{ secrets.VPS_PATH }}"
